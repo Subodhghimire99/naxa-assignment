@@ -1,5 +1,4 @@
 .service_container {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -11,9 +10,6 @@
 }
 .flexitem {
   width: 50%;
-}
-.service_image {
-  /* border: 1px solid green; */
 }
 .service_image img {
   margin-left: 20%;
@@ -33,7 +29,6 @@
 .service_details_items {
   text-align: left;
   margin: 10px 50px;
-  /* padding: 20px 40px; */
 }
 .service_details_items h3 {
   font-family: Montserrat, sans-serif;
@@ -44,7 +39,6 @@
 }
 .sub_para {
   font-size: 0.93rem;
-  /* border: 1px solid green; */
   background-color: #e9ebff;
   padding: 25px;
 }

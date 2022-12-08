@@ -1,11 +1,9 @@
 .ServiceNav {
-  /* border: 1px solid red; */
   width: 100vw;
   height: 210px;
-  margin-top: -210px;
+  margin-top: -200px;
 }
 .ServiceNav_div {
-  /* border: 1px solid green; */
   box-sizing: border-box;
   width: 80%;
   height: 100%;
@@ -18,13 +16,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .list_item {
   width: 14%;
   height: 70px;
-  /* border: 1px solid green; */
   display: block;
   padding: 10px;
   margin-bottom: 5px;
@@ -32,7 +28,7 @@
 }
 .list_item:hover {
   background-color: #ffdc1c;
-  transition: ease-in 500ms;
+  transition: ease-in-out 500ms;
 }
 .list_item a {
   line-height: 0.6;

@@ -3,8 +3,14 @@ import serviceLogo from "../images/serviceLogo.png";
 
 const Service = (props) => {
   const myData = props.serviceData;
-  let description1_with_p = myData.description1;
-  let description1_without_P = description1_with_p.replaceAll("<p>", " ");
+  const description1_p = myData.description1.replace(
+    /(<p[^>]+?>|<p>|<\/p>)/gim,
+    ""
+  );
+  const description2_p = myData.description2.replace(
+    /(<p[^>]+?>|<p>|<\/p>)/gim,
+    ""
+  );
 
   const [title, service_order, photo, id, icon, description2, description1] = [
     myData.title,
@@ -12,8 +18,8 @@ const Service = (props) => {
     myData.photo,
     myData.id,
     myData.icon,
-    description1_without_P,
-    myData.description2,
+    description1_p,
+    description2_p,
   ];
   const index = props.indexValue;
   if (index % 2 == 0) {
@@ -30,9 +36,7 @@ const Service = (props) => {
             <h3>{title}</h3>
           </div>
           <div className="main_para service_details_items">{description2}</div>
-          <div className="sub_para service_details_items">
-            <p>{description1}</p>
-          </div>
+          <div className="sub_para service_details_items">{description1}</div>
         </div>
       </div>
     );

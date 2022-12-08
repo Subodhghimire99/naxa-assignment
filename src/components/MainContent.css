@@ -1,7 +1,6 @@
 .maincontent {
   font-family: Montserrat, sans-serif;
   background-image: url(../images/mainSectionbackground.jpg);
-  /* border: 1px solid red; */
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: 100% 0 !important;

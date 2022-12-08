@@ -5,8 +5,8 @@ const Services = (props) => {
   let myData = props.myData;
   return (
     <div className="services">
-      {myData.map((element) => {
-        return <Service serviceData={element} />;
+      {myData.map((element, index) => {
+        return <Service indexValue={index} serviceData={element} />;
       })}
     </div>
   );

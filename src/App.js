@@ -6,6 +6,7 @@ import Banner from "./components/Banner";
 import MainContent from "./components/MainContent";
 import ServiceNav from "./components/ServicesNav";
 import Footer from "./components/Footer";
+import FooterLast from "./components/FooterLast";
 
 function App() {
   const [data, setData] = useState([]);
@@ -31,6 +32,7 @@ function App() {
       <ServiceNav />
       <Services myData={data} />
       <Footer />
+      <FooterLast />
     </div>
   );
 }

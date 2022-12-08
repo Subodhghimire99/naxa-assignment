@@ -1,3 +1,4 @@
+import "./Services.css";
 import Service from "./Service";
 
 const Services = (props) => {

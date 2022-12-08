@@ -1,4 +1,6 @@
-services {
+.services {
+  background-color: #f8f8f8;
+  margin: 20px 0px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
 }

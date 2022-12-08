@@ -1,0 +1,16 @@
+a {
+  justify-content: center;
+  align-items: center;
+}
+.lets_talk_button {
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #ffdc1c;
+  color: #05f;
+  width: 120px;
+  height: 30px;
+}
+.lets_talk_button:hover {
+  background-color: #ffab00;
+}

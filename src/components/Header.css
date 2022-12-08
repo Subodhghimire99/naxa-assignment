@@ -1,0 +1,48 @@
+.header {
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+ul,
+li {
+  list-style: none;
+}
+.main_nav {
+  /* border: 1px solid red; */
+  color: #333132;
+  display: flex;
+}
+.main_nav ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  height: 30px;
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_nav_li {
+  line-height: 1.7;
+  height: inherit;
+  justify-content: center;
+  padding: 0px 20px;
+  font-weight: 500;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  width: 110px;
+  height: 32px;
+}
+.naxalogo {
+  /* border: 1px solid red; */
+  width: 110px;
+  height: 32px;
+}

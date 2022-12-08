@@ -1,0 +1,20 @@
+.banner {
+  background-color: #ffdc1c;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.link a {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.link:hover {
+  transform: translateX(-20px);
+  transition: all 0.1s ease-in-out;
+  color: #05f;
+}

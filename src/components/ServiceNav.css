@@ -1,0 +1,43 @@
+.ServiceNav {
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 210px;
+  margin-top: -210px;
+}
+.ServiceNav_div {
+  /* border: 1px solid green; */
+  box-sizing: border-box;
+  width: 80%;
+  height: 100%;
+  box-shadow: 0 0 70px rgb(0 0 0 / 16%);
+  background-color: #ffffff;
+  font-weight: 500;
+  padding: 15px 30px 15px 30px;
+  display: flex;
+  margin-left: 170px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list_item {
+  width: 14%;
+  height: 70px;
+  /* border: 1px solid green; */
+  display: block;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #989898;
+}
+.list_item:hover {
+  background-color: #ffdc1c;
+  transition: ease-in 500ms;
+}
+.list_item a {
+  line-height: 0.6;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}

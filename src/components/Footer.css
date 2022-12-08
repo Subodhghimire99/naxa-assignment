@@ -1,0 +1,20 @@
+.footer {
+  margin: 40px auto;
+  padding: 16px 40px;
+  border-radius: 1%;
+  /* border: 1px solid red; */
+  height: 250px;
+  width: 1200px;
+  background: transparent
+    linear-gradient(59deg, #05f, #05f 20%, #001acb 70%, #001acb 97%, #001acb) 0
+    0 no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer_items {
+  color: #fff;
+  width: 500px;
+  text-align: center;
+}

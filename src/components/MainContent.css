@@ -1,0 +1,52 @@
+.maincontent {
+  background-image: url(../images/mainSectionbackground.jpg);
+  /* border: 1px solid red; */
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: 100% 0 !important;
+  background-color: #fff !important;
+  height: 700px;
+  line-height: 1.7;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333132;
+}
+
+.maincontent h1 {
+  font-size: 17px;
+  margin-bottom: 26px;
+  line-height: 1.4;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.maincontent h3 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.maincontent p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 40px;
+  width: 740px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-style: bold;
+  line-height: 2rem;
+}
+.content_body {
+  width: 1010px;
+  height: 210;
+  margin: 100px 110px;
+  text-align: left;
+}

@@ -1,6 +1,5 @@
 import "./App.css";
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useEffect } from "react";
 import Services from "./components/Services";
 import Banner from "./components/Banner";
 import MainContent from "./components/MainContent";
@@ -8,14 +7,16 @@ import ServiceNav from "./components/ServicesNav";
 import Footer from "./components/Footer";
 import FooterLast from "./components/FooterLast";
 import SocialAndCopyright from "./components/SocialAndCopyright";
+import { useSelector, useDispatch } from "react-redux";
+import { requestUsers } from "./actions/action";
 
 function App() {
-  const [data, setData] = useState([]);
+  const apiUrl = "https://admin.naxa.com.np/api/services";
+  const { usersData, isLoading } = useSelector((state) => state);
+  const dispatch = useDispatch(apiUrl);
 
   useEffect(() => {
-    axios
-      .get("https://admin.naxa.com.np/api/services")
-      .then((response) => setData(response.data));
+    dispatch(requestUsers());
   }, []);
 
   return (
@@ -23,7 +24,7 @@ function App() {
       <Banner />
       <MainContent />
       <ServiceNav />
-      <Services myData={data} />
+      <Services myData={usersData} />
       <Footer />
       <FooterLast />
       <SocialAndCopyright />

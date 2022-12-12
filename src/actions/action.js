@@ -1,7 +1,9 @@
 import axios from "axios";
 import USER from "../constants";
 
-export const requestUsers = (apiUrl) => async (dispatch) => {
+const apiUrl = "https://admin.naxa.com.np/api/services";
+
+export const requestUsers = (data) => async (dispatch) => {
   dispatch({
     type: USER.LOAD,
   });

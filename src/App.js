@@ -11,9 +11,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { requestUsers } from "./actions/action";
 
 function App() {
-  const apiUrl = "https://admin.naxa.com.np/api/services";
   const { usersData, isLoading } = useSelector((state) => state);
-  const dispatch = useDispatch(apiUrl);
+  const dispatch = useDispatch(usersData);
 
   useEffect(() => {
     dispatch(requestUsers());
